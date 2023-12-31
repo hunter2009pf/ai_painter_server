@@ -1,0 +1,6 @@
+SERVICE:
+    PORT: 28888
+    UPLOAD_ROOT_PATH: /ai_painter/content
+    IMAGE_OUTPUT_DIR_PATH: /ievaluation_vs/content/images 
+
+OPEN_CROSS_DOMAIN: False
