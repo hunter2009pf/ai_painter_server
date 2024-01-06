@@ -16,14 +16,14 @@ import os
 
 work_dir = os.getcwd()
 
-AI_PAINT_ENVIRONMENT = os.getenv('AI_PAINT_ENVIRONMENT', None) # 开发环境：dev；生产环境：release
+AI_PAINTER_ENVIRONMENT = os.getenv('AI_PAINTER_ENVIRONMENT', None) # 开发环境：dev；生产环境：release
  
 IS_LINUX = True if (platform == "linux" or platform == "linux2") else False
 
 settings = Dynaconf(
     envvar_prefix="DYNACONF",
     settings_files=[
-        f'{work_dir}/configs/settings_release.yaml' if (AI_PAINT_ENVIRONMENT == "release") else f'{work_dir}/configs/settings_dev.yaml', 
+        f'{work_dir}/configs/settings_release.yaml' if (AI_PAINTER_ENVIRONMENT == "release") else f'{work_dir}/configs/settings_dev.yaml', 
     ],
 ) if IS_LINUX else Dynaconf(
     envvar_prefix="DYNACONF",

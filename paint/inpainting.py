@@ -12,7 +12,7 @@ from diffusers import AutoPipelineForInpainting
 from PIL.Image import Image
 import torch
 
-from base_painter import BasePainter
+from paint.base_painter import BasePainter
 
 
 class InPaintingPainter(BasePainter):

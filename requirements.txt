@@ -1,4 +1,6 @@
-diffusers
+diffusers==0.25.0
+accelerate 
+transformers
 fastapi
 uvicorn
 pydantic
